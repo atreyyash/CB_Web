@@ -1,0 +1,14 @@
+div > p {
+    color: blueviolet;
+}
+
+/* Isme li saare immediate siblings par color change ho jayega  */
+/* 1st vale li par isiliye nahi hua kyuki this means li ke saare bhaiyo ke color change honge that does not mean ki mera bhi color change hoga */
+li + li {
+    color: orangered;
+}
+
+/* General siblings me li ke saare sibling par apply hoga not imporatant to be immediate */
+li~li {
+    color: blue;
+}
