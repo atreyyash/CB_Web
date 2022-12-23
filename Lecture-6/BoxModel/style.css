@@ -1,0 +1,16 @@
+div{
+    background-color: antiquewhite;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 5px solid black;
+    margin: 10px;
+}
+
+span{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    padding: 10px;
+    margin: 20px;
+}

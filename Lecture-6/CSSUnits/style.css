@@ -1,0 +1,35 @@
+/* ul{
+    font-size: 50px;
+}
+
+li{
+    font-size: 50%;
+} */
+
+/* em relative unit */
+
+/* .sam{
+    font-size: 10px;
+}
+
+li{
+    font-size: 2em;
+} */
+
+/* rem relative unit */
+
+.sam{
+    font-size: 10px;
+}
+
+li{
+    font-size: 4rem;
+}
+
+/* view height and width */
+
+div{
+    width: 50vw;
+    height: 50vh;
+    background-color: aquamarine;
+}
