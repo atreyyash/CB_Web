@@ -1,0 +1,39 @@
+.div{
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.side-a, 
+.side-b{
+    min-height: 50px;
+    /* width: 200px; */
+    margin: 10px;
+}
+
+.side-a{
+    width: 40%;
+    float: left;
+}
+
+.side-b{
+    float: right;
+    width: 50%;
+}
+
+.christmas-image{
+    /* width: 200px; */
+    /* height: 200px; */
+    width: 100%;
+}
+
+/* clearFix se parent adjust ho jayega yaani parent ko bata dega ki aap ke andar ek cheez hai jo float kar rahi hai to dont collapse. */
+/* yaha par float left aur float right dono ho rahe hai isiliye clear both diya otherwise sirf jo float ho raha hai vo dete. */
+.clearFix{
+    clear: both;
+}
+
+.div::after{
+    content: "\260E";
+    display: table;
+    clear: both;
+}
