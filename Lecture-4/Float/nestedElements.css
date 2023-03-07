@@ -1,0 +1,56 @@
+*{
+    /* margin: 0; */
+    /* padding: 0; */
+    font-size: 35px;
+}
+
+.parent{
+    width: 900px;
+    border: 1px solid black;
+    margin: 0px auto;
+}
+
+.div{
+    border: 1px solid black;
+    width: 700px;
+    margin: 10px auto;
+    padding: 5px;
+    /* text-align: center; */
+}
+
+.div1{
+    background-color: aquamarine;
+}
+
+.div2{
+    background-color: bisque;
+}
+
+.img{
+    width: 15%;
+    border-radius: 50%;
+    float: left;
+}
+
+.about-salman{
+    width: 80%;
+    float: right;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.randomDiv{
+    border: 2px solid black;
+}
+
+.div1::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.phone::after{
+    content: "\1F512";
+}

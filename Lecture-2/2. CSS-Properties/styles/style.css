@@ -1,0 +1,37 @@
+h2{
+    color: blueviolet;
+    font-size: 50px;
+}
+
+p{
+    color: brown;
+    /* line-height: 35px; */
+    /* margin: 30px; */
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-right: 10px;
+    margin-left: 90px;
+    font-family: sans-serif;
+
+    /* Text ki thickness change karte hai */
+    font-weight: 800;
+}
+
+h1{
+    font-size: 20px;
+}
+
+/* Descendants Selector */
+
+em{
+    color: blue;
+}
+/* space is used to select descendant of p-tag */
+p span{
+    background-color: turquoise;
+}
+
+p span em{
+    background-color: black;
+    color: white;
+}

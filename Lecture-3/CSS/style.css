@@ -1,0 +1,31 @@
+h1, div{
+    font-family: serif;
+    font-size: 30px;
+    color: burlywood;
+}
+
+.animals{
+    color: blue;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    /* Margin Shorthand : Top  Right Bottom Left */
+    /*            margin: 10px 10px  20px   25px */
+    /* Another ShortHand margin: 10px 25px */
+                            /*   T/B  R/L */
+}
+
+.caretaker{
+    color: darkblue;
+}
+
+#lion{
+    /* If !important is give to any property then this will applied to all irrespective of any priority */
+    color: darkorchid !important;
+}
+
+/* Universal Selectors */
+*{
+    margin: 0;
+    padding: 0;
+}

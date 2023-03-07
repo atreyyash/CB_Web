@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="">
+        <label for="name">Name : </label>
+        <input id="name" type="text" placeholder="Enter Name"><br>
+        <label for="password">Password : </label>
+        <input id="password" type="password" placeholder="Enter Password"><br>
+        <br> Branch : <br>
+        <input type="radio" name="branch"> CS
+        <input type="radio" name="branch"> IT <br>
+        <input type="radio" name="branch"> ECE
+        <input type="radio" name="branch"> EE
+
+        <br> Hobbies : <br>
+        <input type="checkbox" name="hobby"> Badminton
+        <input type="checkbox" name="hobby"> Gaming <br>
+        <input type="checkbox" name="hobby"> Travelling
+        <input type="checkbox" name="hobby"> Coding
+        <br>
+        <br>
+
+        <br> Poison : <br>
+        <input type="checkbox" name="poison">Snake Bite <br>
+        <input type="checkbox" name="poison">Spider Bite <br>
+        <input type="checkbox" name="poison">Lizard Bite <br>
+        <input type="checkbox" name="poison">Human Bite <br>
+
+        <label for="pet-select">Choose a pet:</label>
+
+        <select name="pets" id="pet-select">
+            <option value="">--Please choose an option--</option>
+            <option>Dog</option>
+            <option>Cat</option>
+            <option>Hamster</option>
+            <option>Parrot</option>
+            <option>Spider</option>
+            <option>Goldfish</option>
+        </select>
+        <br><br>
+        <textarea cols="50" rows="10">
+            Write briefly about yourself...
+        </textarea>
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

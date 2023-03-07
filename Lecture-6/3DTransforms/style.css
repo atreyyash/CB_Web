@@ -1,0 +1,42 @@
+body{
+    perspective: 800px;
+    background-color: rgb(250, 246, 232);
+}
+
+.container{
+    width: 200px;
+    height: 250px;
+    margin: 40px auto;
+    border: 1px solid black;
+    background-color: blueviolet;
+    position: relative;
+    transform-style: preserve-3d;
+    transition-duration: 1s;
+    backface-visibility: hidden;
+}
+
+.container:hover{
+    transform: rotateY(180deg);
+}
+
+.side-a{
+    width: 100%;
+    height: 100%;
+    background-color: beige;
+    border: 1px solid black;
+    position: absolute;
+    transform: rotateY(180deg);
+}
+
+.text{
+    padding: 10px;
+}
+
+.side-b{
+    width: 100%;
+    height: 100%;
+    background-color: cadetblue;
+    position: absolute;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/c/c0/Official_Photograph_of_Prime_Minister_Narendra_Modi_Potrait.png);
+    background-size: cover;
+}

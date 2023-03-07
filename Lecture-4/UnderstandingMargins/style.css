@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+.mydiv{
+    border: 1px solid black;
+    padding: 5px;
+    width: 300px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.circle{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: chocolate;
+    margin: 30px auto;
+    border-radius: 100px;
+}
+
+.oval{
+    height: 200px;
+    width: 100px;
+    border: 1px solid black;
+    background-color: chocolate;
+    margin: 30px auto;
+    border-radius: 3000px;
+}

@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    line-height: 1.5;
+}
+
+/* DESCENDANT SELECTORS */
+/* GRANDFATHER --> FATHER --> CHILD */
+
+span{
+    color: orange;
+}
+
+div div{
+    color: red;
+}
+
+div div span{
+    color: rgb(226, 19, 191);
+}
+
+/* COMBINATORS */
+
+/* 1. > Direct Child */
+/* 2. + Immediate Sibling */
+/* 3. ~ General Sibling */
+
+ul{
+    margin-left: 20px;
+}
+
+/* ul > li {
+    color: steelblue;
+} */
+
+/* li + li {
+    color: teal;
+} */
+
+/* li ~ li {
+    color: orangered;
+} */
+
+/* PSEUDOCLASS */
+/* li:nth-child(an+b){
+    CSS
+ }
+ (an+b) :- where b is offset and a*n is period 
+*/
+li:nth-child(2n+2){
+    color: palevioletred;
+    text-decoration: underline;
+}
+
+/* NAVBAR */
+
+.navbar{
+    border: 1px solid black;
+    background-color: black;
+    padding: 10px;
+}
+
+.nav-item{
+    margin: 5px 10px;
+}
+
+/* PSEUDOCLASS */
+
+/* LVHA(link, visited, hover, active) */
+.nav-item:link{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-item:visited{
+    color: white;
+}
+
+.nav-item:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.nav-item:active{
+    color: black;
+    background-color: yellowgreen;
+    text-decoration: none;
+}
+
+/* STRUCTURAL PSUEDOCLASS */
+/* li:first-child{
+    color: cornflowerblue;
+}
+
+li:last-child{
+    color: cornflowerblue;
+} */
+
+/* :only-child{
+    background-color: black;
+} */
