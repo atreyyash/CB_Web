@@ -50,3 +50,5 @@ li.innerText = 'Spiderman';
 
 // 3. Jakar is  element ko parent ke andar append kardo
 movieList.appendChild(li);
+
+movieList.removeChild(item2);
