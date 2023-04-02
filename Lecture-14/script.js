@@ -30,3 +30,23 @@ console.log(item2.innerHTML);
 // CHANGING THE VALUE AN ELEMENT
 // item2.innerText = '<b>Ironman</b>';
 item2.innerHTML = '<b>Ironman</b>';
+
+// ADDING A NEW ELEMENT
+// MODIFY DOM AS MINIMUM AS POSSIBLE
+const movieList = document.querySelector('.list');
+console.log(movieList);
+
+// This not a good way to add a element
+// movieList.innerHTML += '<li class-"item4 listitem">HULK</li>';
+
+
+// BEST WAY TO ADD A NEW ELEMENT:
+
+// 1. Ek naya element banao
+let li = document.createElement('li');
+
+// 2. Element ke andar ki value update karlo
+li.innerText = 'Spiderman';
+
+// 3. Jakar is  element ko parent ke andar append kardo
+movieList.appendChild(li);
