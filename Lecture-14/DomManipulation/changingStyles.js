@@ -15,3 +15,8 @@ setInterval(() => {
     // ul.classList.toggle('meriList');
     // body.classList.toggle('meriBody');
 }, 100);
+
+console.log(ul.parentElement);
+console.log(ul.previousElementSibling);
+console.log(ul.nextElementSibling);
+ul.nextElementSibling.remove();
