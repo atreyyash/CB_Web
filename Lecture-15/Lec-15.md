@@ -2,7 +2,7 @@
 
 ## Event Delegation
 
-[Event bubbling](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#setting_a_listener_on_a_parent_element:~:text=running%20live%20here).-,Event%20bubbling,-Event%20bubbling%20describes) has its cons but it can be very useful at some situation.
+[Event bubbling](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#setting_a_listener_on_a_parent_element:~:text=Event%20bubbling).-,Event%20bubbling,-Event%20bubbling%20describes) has its cons but it can be very useful at some situation.
 
 Suppose we have a large numbers of children in an element and we want to apply event listeners to it then event delegation can be very useful and we need not to apply event listeners to every child in it.
 
@@ -76,6 +76,8 @@ div.classList.add('item', 'item-10');
 div.innerText = 10;
 container.appendChild(div); // appenChild works on element whereas append works on text
 ```
+
+## FETCH METHOD
 
 - It uses a request and a reponse objects.
 
