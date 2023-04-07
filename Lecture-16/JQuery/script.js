@@ -49,7 +49,6 @@ $('h1').click((e => {
     target.addClass('myFont');
 
     setTimeout(() => {
-        // target.removeClass('myColor');
-        target.remove('.myColor', '.myFont');
+        target.removeClass('myColor myFont');
     }, 3000);
 }))
