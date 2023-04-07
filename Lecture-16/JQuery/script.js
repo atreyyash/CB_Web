@@ -10,9 +10,8 @@
 // OR
 // $(element).add();
 
-const li = $('.item');
 const h1 = $('h1');
-console.log(li);
+// console.log(li);
 console.log(h1);
 
 // Add an element to the list
@@ -28,6 +27,7 @@ li1.attr('class', 'item');
 // jis element par kaam ho raha hai toh vahi return hota hai isiliye hum chaining use kar sakte hai
 movieList.append($('<li>').text('Dark Knight').attr('class', 'item'));
 
+let li = $('.item');
 // UPDATION
 li.each(function () {
     // console.log(this);
