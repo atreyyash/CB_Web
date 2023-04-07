@@ -10,6 +10,7 @@
 // OR
 // $(element).add();
 
+// class through uthane par saare elements aa jayenge aur ID se uthane par single element aayega
 const h1 = $('h1');
 // console.log(li);
 console.log(h1);
@@ -33,3 +34,22 @@ li.each(function () {
     // console.log(this);
     $(this).text($(this).text() + '-Movie')
 })
+
+li.attr('class', 'myColor'); // This will apply to all li ( This will automatically iterate on all li's )
+
+// li.remove(); // Saare li hat delete ho jayege
+
+
+// EVENTS
+
+$('h1').click((e => {
+    console.log(e);
+    let target = $(e.target);
+    target.attr('class', 'myColor');
+    target.addClass('myFont');
+
+    setTimeout(() => {
+        // target.removeClass('myColor');
+        target.remove('.myColor', '.myFont');
+    }, 3000);
+}))
