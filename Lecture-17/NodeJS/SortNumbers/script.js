@@ -22,9 +22,9 @@ function sortArray(arr) {
         return a - b;
     })
     console.log(arr);
-
+    let filePath = path.join(__dirname, 'result.json');
     fs.writeFile(
-        'result.json',
+        filePath,
         JSON.stringify(arr),
         (err) => {
             if (err) console.log(err);
