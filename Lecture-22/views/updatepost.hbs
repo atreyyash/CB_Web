@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/../styles/style.css">
+</head>
+
+<body>
+    {{>navbar}}
+    <h1>{{title}}</h1>
+    <form class="postForm" action="/posts/updatepost" method="POST">
+        <label for="title">Title: </label>
+        <input value="{{item.title}}" class="postFormItem" type="text" name="title" id="title" placeholder="Enter Title"><br>
+        <label for="imageUrl">Image URL: </label>
+        <input value="{{item.imageUrl}}" type="text" class="postFormItem" name="imageUrl" id="imageUrl" placeholder="Enter Image"><br>
+        <label for="caption">Caption: </label>
+        <input value="{{item.caption}}" type="text" class="postFormItem" name="caption" placeholder="Enter Caption"><br>
+        <input type="hidden" value="{{item.id}}" name="id"><br>
+        <button class="postFormItem" type="submit">Update Post</button>
+    </form>
+</body>
+
+</html>
