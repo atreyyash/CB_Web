@@ -1,0 +1,34 @@
+[
+{
+    "name": "Tab",
+    "price": "50K",
+    "desc": "This is an amazing Tablet"
+},
+{
+    "name": "Laptop",
+    "price": "90K",
+    "desc": "This is an amazing Laptop"
+
+},
+{
+    "name": "Pen",
+    "price": "10",
+    "desc": "This is an amazing pen",
+    "date": new Date(),
+    "Time": new Timestamp()
+},
+{
+    "name": "Sg Fold-3",
+    "price": "150K",
+    "desc": "This is a folding phone",
+    "date": new Date(),
+    "Time": new Timestamp()
+},
+{
+    "name": "Sg Fold-3",
+    "price": "150K",
+    "date": new Date(),
+    "Time": new Timestamp(),
+    "processor": "SD-8 gen 1"
+}
+]
