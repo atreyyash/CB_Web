@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.head{
+    text-align: center;
+    font-size: 40px;
+    font-family: cursive;
+    box-shadow: 0 8px 8px -8px #333;
+}
+
+.navBar{
+    background-color: cadetblue;
+    padding: 10px;
+}
+
+.navItem{
+    margin-right: 15px;
+    margin-left: 15px;
+    color: black;
+    font-size: 22px;
+}
+
+.navItem:link{
+    text-decoration: none;
+    color: black;
+}
+
+.navItem:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.navItem:hover{
+    text-decoration: underline;
+    color: aliceblue;
+}
+
+.postForm{
+    background-color: cadetblue;
+    border: 1px solid black;
+    width: 400px;
+    height: 300px;
+    margin: 30px auto;
+    text-align: center;
+    box-shadow: 0 5px 5px -5px #333;
+}
+
+.postItem{
+    padding: 10px;
+    margin: 15px;
+    text-decoration: none;
+}
+
+.postItem:focus{
+    box-shadow: 0 8px 8px -8px #333;
+}
+
+.card{
+    text-decoration: none;
+    width: 350px;
+    height: 400px;
+    border: 1px solid black;
+    margin: 15px;
+    /* box-shadow: 0 10px 10px -10px #333; */
+    display: inline-block;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #333;
+}
+
+.imageUrl{
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}

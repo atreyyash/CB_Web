@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Post</title>
+    <link rel="stylesheet" href="/../styles/style.css">
+</head>
+<body>
+    {{>navbar}}
+    <h1 class="head">Add Post</h1>
+    <form action="/post/addpost" method="post" class="postForm">
+        <input type="text" placeholder="Enter Title" name="title" id="title" class="postItem"><br>
+        <input type="text" name="imageUrl" id="imageUrl" placeholder="Enter Image Url" class="postItem"><br>
+        <input type="text" name="desc" id="desc" placeholder="Enter Description" class="postItem"><br>
+        <button type="submit" class="postItem">Submit</button>
+    </form>
+</body>
+</html>
