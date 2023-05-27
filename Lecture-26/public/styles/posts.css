@@ -1,0 +1,57 @@
+.postsList{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.postItem{
+    border: 1px solid black;
+    box-shadow: 4px 4px 10px black;
+    margin: 10px;
+    border-radius: 3px;
+    list-style: none;
+    width: 25%;
+}
+
+.postImage{
+    width: 100%;
+}
+
+.deleteButton{
+    text-decoration: none;
+}
+
+
+.postForm{
+    border: 1px solid black;
+    width: 60%;
+    margin: auto;
+}
+
+.postForm::after,
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.updateImage{
+    width: 100%;
+}
+
+.floatRight{
+    float: right;
+}
+
+.floatLeft{
+    float: left;
+}
+.w30{
+    width: 30%;
+}
+.w66{
+    width: 66%;
+}
+
+.w100{
+    width: 100%;
+}
