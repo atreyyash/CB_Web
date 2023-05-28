@@ -79,6 +79,11 @@ app.post('/addblog', (req, res, next) => {
         description,
         author_id: req.user._id
     });
+    Users.findOne({ _id: req.user._id })
+        .then((user) => { 
+            user.blogs.push(newBlog._id);
+            user.save();
+        })
     newBlog.save()
         .then(() => {
             res.redirect('/myblogs');
