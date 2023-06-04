@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Posts</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="/../styles/style.css">
+    {{!-- <link rel="stylesheet" href="/../styles/posts.css"> --}}
+</head>
+<body>
+    {{>navbar}}
+    <h1 class="head">All Posts</h1>
+    <ul class="postsList">
+    {{#each data as |d|}}
+        <li class="card">
+            <img src={{d.imageUrl}} class="imageUrl"><br>
+            <div class="title">{{d.title}}</div>
+            <div class="desc">{{d.desc}}</div>
+            <button class="deleteBtn" id="{{d._id}}">🗑️</button>
+            <button class="updateBtn" id="{{d._id}}">
+                <a href="/post/updatepost?id={{d._id}}">📝</a>
+            </button>
+            <button class="infoBtn">
+                <a href="/post/viewinfo?id={{d._id}}">ℹ️</a>
+            </button>
+        </li>
+    {{/each}}
+    </ul>
+
+    <script src="js/posts.js"></script>
+</body>
+</html>
