@@ -13,7 +13,7 @@ const Users = require('./models/users');
 const Blogs = require('./models/blogs');
 
 app.use((req, res, next) => {
-    Users.find({ _id: "64731c9086a534291b9bd337" })
+    Users.find({ _id: "647321c75edfc338e8387b9c" })
         .then(user => {
             console.log(user[0]);
             req.user = user[0];
@@ -27,7 +27,9 @@ app.get('/myblogs', (req, res) => {
         .populate('author_id')
         .then((blogs) => {
             console.log(blogs);
-            res.render('myblogs');
+            res.render('myblogs', {
+                blogs
+            });
         })
 })
 
@@ -89,6 +91,17 @@ app.post('/addblog', (req, res, next) => {
             res.redirect('/myblogs');
         })
         .catch((err) => {
+            res.send(err);
+        })
+});
+
+app.get('/deleteblog', (req, res) => {
+    const { id } = req.query;
+    Blogs.deleteOne({ _id: id })
+        .then(() => {
+            res.redirect('/myblogs');
+        })
+        .catch(err => {
             res.send(err);
         })
 });

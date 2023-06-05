@@ -15,6 +15,15 @@
         <button type="submit">Add Blog</button>
     </form>
 
-
+    {{#each blogs as |blog|}}
+        <div class="blogs" style="border: 1px solid black; margin: 10px">
+            <h3>{{blog.title}}</h2>
+            <p>{{blog.description}}</p>
+            <p>{{blog.author_id.name}}</p>
+            <p>{{blog.author_id.age}}</p>
+            <button><a href="/deleteblog?id={{blog.id}}">Delete Blog</a></button>
+            <button><a href="/updateblog?id={{blog.id}}">Update Blog</a></button>
+        </div>
+    {{/each}}
 </body>
 </html>
