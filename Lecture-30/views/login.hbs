@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginUp</title>
+</head>
+<body>
+    {{msg}}
+    <h1>Welcome to Login</h1>
+    <form action="/login" method="post">
+        <input type="text" class="username" id="username" name="username" placeholder="USERNAME"><br>
+        <input type="text" class="password" id="password" name="password" placeholder="PASSWORD"><br>
+        <button type="submit">Login</button>
+    </form>
+
+    <div>
+        <span>New User? SignUp</span>
+        <a href="/signup">SingUp</a>
+    </div>
+
+
+    <div>
+        Login via FB!
+        <a href="/auth/facebook">LOGIN-FB</a>
+    </div>
+    <div>
+        Login via Google!
+        <a href="/auth/google">LOGIN-Google</a>
+    </div>
+</body>
+</html>
