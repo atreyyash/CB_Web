@@ -1,3 +1,5 @@
 Medium/
 Revision/
 node_modules/
+data/
+.env
