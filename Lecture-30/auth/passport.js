@@ -4,8 +4,6 @@ const bcrypt = require('bcrypt');
 const User = require('../models/users');
 const FacebookStrategy = require('passport-facebook');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
-const dotenv = require('dotenv');
-dotenv.config();
 
 passport.use(new LocalStrategy(
     async function (username, password, done) {
@@ -26,8 +24,8 @@ passport.use(new LocalStrategy(
 ));
 
 passport.use(new FacebookStrategy({
-    clientID: process.env.fbClientId,
-    clientSecret: process.env.fbClientSecret,
+    clientID: "208278391672051",
+    clientSecret: "34a56fc2efa61b02b4583a6b5e94c3fe",
     callbackURL: "http://localhost:4444/auth/facebook/callback"
 },
     async function (accessToken, refreshToken, profile, cb) {
@@ -57,8 +55,8 @@ passport.use(new FacebookStrategy({
 ));
 
 passport.use(new GoogleStrategy({
-    clientID: process.env.googleClientId,
-    clientSecret: process.env.googleClientSecret,
+    clientID: "799115154696-n70qfh54inqicjf5v5r1vth18165hc1p.apps.googleusercontent.com",
+    clientSecret: "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",
     callbackURL: "http://localhost:4444/auth/google/callback"
 },
     async function (accessToken, refreshToken, profile, cb) {
