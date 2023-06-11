@@ -5,8 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat App</title>
     <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>ChatApp</h1>
+
+    <div class="userDetails">
+        <input type="text" id="username"><br>
+        <button id="btn1">Enter ChatRoom</button>
+    </div>
+
+    <div class="chatbox">
+        <input type="text" id="msg"><br>
+        <button id="btn">Send</button>
+        <div class="msgList"></div>
+    </div>
+
+    
+    <script src="./script.js"></script>
 </body>
 </html>
