@@ -1,0 +1,23 @@
+.inp{
+    margin: 4px;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.inp:hover{
+    /* color : white; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.addBtn{
+    margin: 3px;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+.addBtn:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: cornflowerblue;
+}
