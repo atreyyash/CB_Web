@@ -1,0 +1,17 @@
+body {
+  background-color: #0009;
+  color: #fff;
+}
+
+.container {
+  width: 700px;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+  font-size: 30px;
+  font-family: cursive;
+}
+
+.pointer{
+  cursor: pointer;
+}

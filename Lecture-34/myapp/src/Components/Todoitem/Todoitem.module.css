@@ -1,0 +1,13 @@
+.todoItem {
+    margin: 3px;
+    color: #ffff80;
+}
+
+.todoBtn {
+    margin: 2px;
+    display: inline-block;
+}
+
+.todoItem:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
